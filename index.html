@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" maxmun-scale=1, user-scalable="no">
     <link rel="stylesheet" href="estilo.css">
+    <!-- Google icons (ícones)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/icons8-contato-96.png" type="image/x-icon">
     <title>Página de contato</title>
 </head>
 <body>
-    <h1>teste</h1>
+    <div id="main-container">
+        <!-- Informações de endereço-->
+        <div id="endereço-container">
+            <div class="fade"></div>
+            <div id="endereço-content">
+                <h2><span class="material-symbols-outlined">contact_mail</span>Endereço</h2>
+                <p>Rua das Flores, 133</p>
+                <h2><span class="material-symbols-outlined">call</span>Contato</h2>
+                <p>(48) 9999-9999</p>
+                <h2><span class="material-symbols-outlined">mail</span>E-mail</h2>
+                <p>meuemail@emai.com</p>
+            </div>
+        </div>
+        <!-- Formulário para contato -->
+        <div id="form-container">
+            <h2>Nos envie uma mensagem!</h2>
+            <form id="contato-form">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <label for="e-mail">E-mail:</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="Digite seu e-mail">
+                <label for="contato">Contato:</label>
+                <input type="tel" name="contato" id="contato" placeholder="Digite seu n° de telefone">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Como podemos ajudar você?"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
